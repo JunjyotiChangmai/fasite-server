@@ -37,7 +37,7 @@ async function handleNameSearch(req, res) {
         return res.json(user);
     }
     else {
-        return res.sent("user not found...");
+        return res.sendStatus(404);
     }
 }
 
