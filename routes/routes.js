@@ -3,11 +3,11 @@ const {handleAddmembers, handleNameSearch, handlechildNameSearch, getAllMembers}
 
 const router = Router();
 
-router.post("/add", handleAddmembers);
-router.post("/search/person", handleNameSearch);
-router.post("/search/child", handlechildNameSearch);
+router.post("/api/add", handleAddmembers);
+router.post("/api/search/person", handleNameSearch);
+router.post("/api/search/child", handlechildNameSearch);
 
-router.get("/search/allmembers", getAllMembers);
+router.get("/api/search/allmembers", getAllMembers);
 
 
 module.exports = router;
